@@ -1,3 +1,39 @@
+/*Pseudocode
+START
+
+Create an integer array
+
+Set largest = first element of array
+Set secondLargest = smallest possible integer value
+
+FOR each element from index 1 to the end of the array
+
+    IF current element > largest THEN
+
+        Set secondLargest = largest
+        Set largest = current element
+
+    ELSE IF current element < largest
+            AND current element > secondLargest THEN
+
+        Set secondLargest = current element
+
+    END IF
+
+END FOR
+
+IF secondLargest is still the smallest possible integer value THEN
+
+    Print "Second largest distinct element does not exist"
+
+ELSE
+
+    Print "Second Largest = " + secondLargest
+
+END IF
+
+END
+ */
 public class SecondLargestArray
 {
     public static void main(String[] args)
@@ -30,3 +66,5 @@ public class SecondLargestArray
 
     }
 }
+
+//Time Complexity = O(n)
